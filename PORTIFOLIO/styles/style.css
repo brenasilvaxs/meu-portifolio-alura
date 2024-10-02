@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@601&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    /* overflow: hidden;  Remove tanto a rolagem horizontal quanto a vertical */
+} 
+
+:root { /* Variavel Global */
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-tercearia: #22D4FD;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+
+}
+
+.cabecalho {
+    padding: 4% 0% 0% 6%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 8%;
+    display: flex; /* Coloca os itens um ao lado do outro */
+    align-items: center;  /* Coloca os itens no meio do contêiner (de cima para baixo) */
+    justify-content: space-between;
+
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column; /* Flexbox */
+    gap: 10px; /*  especifica o tamanho dos espaços entre linhas e colunas */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 30px; /* Define o tamanho da fonte da classe selecionada */
+    font-family: "Krona One"; /* Coloca a fonte importada de acordo com a classe */
+    white-space: nowrap;  /* Faz com que o texto dentro do elemento não quebre automaticamente para uma nova linha, mesmo se o conteúdo ultrapassar a largura do contêiner. */
+    margin-bottom: 20px; /* Adiciona um espaço de N pixels abaixo do h1, separando-o do parágrafo que vem em seguida. */
+    margin-left: -20px;
+}
+
+.apresentacao__conteudo__titulo_experiencia {
+    font-size: 30px; /* Define o tamanho da fonte da classe selecionada */
+    font-family: "Krona One"; /* Coloca a fonte importada de acordo com a classe */
+    white-space: nowrap;  /* Faz com que o texto dentro do elemento não quebre automaticamente para uma nova linha, mesmo se o conteúdo ultrapassar a largura do contêiner. */
+    margin-bottom: 20px; /* Adiciona um espaço de N pixels abaixo do h1, separando-o do parágrafo que vem em seguida. */
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+.apresentacao__conteudo__titulo_cursos {
+    font-size: 30px; /* Define o tamanho da fonte da classe selecionada */
+    font-family: "Krona One"; /* Coloca a fonte importada de acordo com a classe */
+    white-space: nowrap;  /* Faz com que o texto dentro do elemento não quebre automaticamente para uma nova linha, mesmo se o conteúdo ultrapassar a largura do contêiner. */
+    margin-bottom: 20px; /* Adiciona um espaço de N pixels abaixo do h1, separando-o do parágrafo que vem em seguida. */
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+
+.apresentacao__conteudo__texto {
+    font-size: 19px;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    max-width: 650px; /* Limita o comprimento da frase na página */
+    margin-left: -20px;
+    margin-bottom: 0.5rem;
+}
+
+.contato-container {
+    display: flex; /* Permite que o formulário e as redes sociais fiquem lado a lado */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    align-items: flex-start; /* Alinha o início dos elementos */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+
+.apresentacao__redessociais {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-top: 70px;
+    margin-left: -40%;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: black; /* Cor de fundo dos botões */
+    width: 250px; /* Largura dos botões */
+    text-align: center; /* Texto centralizado */
+    border-radius: 15px; /* Cantos arredondados */
+    border: 1px solid #22D4FD; /* Borda */
+    font-size: 25px;
+    font-weight: 600; /* Peso da fonte */
+    padding: 11px 0; /* Espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.apresentacao__links:hover {
+    background-color: #272727; /* Define a cor do botão ao passar o mouse por cima */
+    padding: 2%;  /* Aumenta o botão ao passar o mouse por cima */ 
+}
+
+.rodape {
+    color: #000000;
+    background-color: #20b3d4;
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: center;
+    font-family:"Montserrat", sans-serif;
+    font-size: 18px;
+    
+}
+
+.imagem-brena {
+    width: 300px; /* Ajuste a largura desejada */
+    height: auto; /* Isso mantém a proporção da imagem */
+    max-width: 100%; /* Isso garante que a imagem não exceda a largura do contêiner */
+    border-radius: 20%;
+    border: 3px solid #22D4FD;
+    margin-bottom: 200px;
+}
+
+.titulo_contato {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form {
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 40%;
+}
+
+.form label {
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+    font: inherit;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid turquoise;
+    border-radius: 10px;
+    transition: border-color,
+    box-shadow 0.2s;
+}
+
+.form textarea {
+    min-height: 10rem;
+    resize: vertical;   
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #22D4FD;
+    box-shadow: 0 0 0 3px #22D4FD;
+}
+
+.form button {
+    display: block;
+    background-color: #22D4FD;
+    padding: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    width: auto;
+}
+
+/* span{ 
+    color: #22D4FD;
+    /* border: 1px solid #22D4FD; Cria uma borda com 1px de largura do tipo sólida na cor mencionada */
+/* Cria um espaçamento interno de 10px */
